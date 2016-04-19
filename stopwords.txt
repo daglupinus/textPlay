@@ -1,0 +1,14 @@
+Weighted Avg. 0.791   0.21   0.796   0.791   0.79   0.838
+Weighted Avg. 0.801   0.199  0.801   0.801   0.801  0.857
+
+Weighted Avg.  0.805  0.195  0.805  0.805  0.805  0.832
+Weighted Avg.  0.788  0.212  0.788  0.788  0.788  0.796
+
+Weighted Avg.  0.851  0.149  0.859  0.851  0.85   0.851
+Weighted Avg.  0.862  0.139  0.867  0.862  0.861  0.862
+As one option we used preprocessing operation is the attribute selection. Eliminating the poorly characterizing attributes can be useful to get a better classification accuracy. For this task, WEKA provides the AttributeSelection filter from the weka.filters.supervised.attribute package. The filter allows to choose an attribute evaluation method and a search strategy.
+The default evaluation method is CfsSubsetEval (Correlation-based feature subset selection). This method works by choosing attributes that are highly correlated with the class attribute while having a low correlation with other attributes.After applying the AttributeSelection filter, we obtain the result the number of attributes has greatly decreased, passing from more than 1000 to just 60 (with using stop list ) or 76 without stop list words. 
+
+The following table show the comparisons of  our best results. We have worked on the dataset on five different classification algorithms i.e., naïve bayes , decision trees, support vector machine, k-nearest neighbours classifier and association rule learning . 
+Of those, for the Attribute Selection and Attribute Selection – stop word list, the  Naïve bayes classifier had the best rate of prediction with our dataset as it better handles highly skewed data.
+The accuracy of the classifier is measured as the number of instances correctly classified;naïve bayes correctly classifies 1732/2000 which is 86,6% for (version with stop words) and 1729/2000 – 86.45% (version without list of stop words
