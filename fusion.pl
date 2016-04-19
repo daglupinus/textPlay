@@ -14,18 +14,18 @@
 #      first by #chr, then by #strand, then by starting position
 #
 ##############################
-use strict; 
+#use strict; 
 
-if ($#ARGV != 1) {
-	die "\n\tUsage: $0 #nucl clusterFileName\n\n";
-}
-my $ecart = $ARGV[0]; # nb de nucleotides d'écart pour fusionner 2 clusters
-open C, "<$ARGV[1]" or die "Impossible ouvrir le fichier de cluster";
+#if ($#ARGV != 1) {
+#	die "\n\tUsage: $0 #nucl clusterFileName\n\n";
+#}
+#my $ecart = $ARGV[0]; # nb de nucleotides d'écart pour fusionner 2 clusters
+#open C, "<$ARGV[1]" or die "Impossible ouvrir le fichier de cluster";
 
-my $i = 0; 
-my $courante = <C>; 
+#my $i = 0; 
+#my $courante = <C>; 
 
-while (my $ligne2 = <C>) {
+#while (my $ligne2 = <C>) {
 
 	my @cols1 = split /\s+/, $courante;
 	my @cols2 = split /\s+/, $ligne2;
