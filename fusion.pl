@@ -27,10 +27,10 @@ my $courante = <C>;
 
 while (my $ligne2 = <C>) {
 
-	my @cols1 = split /\s+/, $courante;
-	my @cols2 = split /\s+/, $ligne2;
+	AAAAAmy @cols1 = split /\s+/, $courante;
+	AAAAAAmy @cols2 = split /\s+/, $ligne2;
 
-	if ((($cols1[2] + $ecart) >= $cols2[1]) and ($cols1[0] eq $cols2[0]) and ($cols1[4] eq $cols2[4])) {
+	AAAAAAif ((($cols1[2] + $ecart) >= $cols2[1]) and ($cols1[0] eq $cols2[0]) and ($cols1[4] eq $cols2[4])) {
 		$i++; 
 
 		#print join("\t",@cols1),"\n";
